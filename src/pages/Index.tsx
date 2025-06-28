@@ -229,9 +229,9 @@ Many authors find it useful to include data from MEROPS in their publications, a
             <Button asChild variant="outline" className="border-merops-green text-merops-green hover:bg-merops-green hover:text-white">
               <Link to="/info/whats-new">
               <div className="flex items-center justify-center">
-                <Eye className="h-4 w-4 text-merops-green mr-2" />
+                <Eye className="h-6 w-6 text-merops-green mr-2" />
                 <span className="text-merops-green">View All Updates</span>
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-6 w-6" />
                 </div>
               </Link>
             </Button>
