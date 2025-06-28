@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Book, ArrowRight } from "lucide-react";
+import { Search, Book, ArrowRight, FileStack, GripVertical, Wrench } from "lucide-react";
 
 const Index = () => {
   return (
@@ -66,7 +66,12 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
             {/* Peptidases */}
             <Card className="bg-[#fffbea] hover:shadow-lg transition-shadow border-l-4 border-l-merops-green">
               <CardHeader>
-                <CardTitle className="text-merops-gray">Peptidases</CardTitle>
+                <CardTitle className="text-merops-gray">
+                  
+                <div className="flex items-center">
+                  <GripVertical className="h-6 w-6 text-merops-green mr-2" />
+                  Peptidases</div>
+                  </CardTitle>
                 <CardDescription>
                   Browse and search peptidase information
                 </CardDescription>
@@ -98,7 +103,11 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
             {/* Classification */}
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-merops-green">
               <CardHeader>
-                <CardTitle className="text-merops-gray">Classification</CardTitle>
+                <CardTitle className="text-merops-gray">
+                  <div className="flex items-center">
+                  <FileStack className="h-6 w-6 text-merops-green mr-2" />
+                  Classification</div>
+                  </CardTitle>
                 <CardDescription>
                   Explore peptidase families and clans
                 </CardDescription>
@@ -118,7 +127,12 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
             {/* Tools */}
             <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-merops-green">
               <CardHeader>
-                <CardTitle className="text-merops-gray">Tools</CardTitle>
+                <CardTitle className="text-merops-gray">
+                  
+                <div className="flex items-center">
+                  <Wrench className="h-6 w-6 text-merops-green mr-2" />
+                  Tools</div>
+                  </CardTitle>
                 <CardDescription>
                   Search and analysis tools
                 </CardDescription>
@@ -209,15 +223,15 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
       </section>
       <section className="text-sm px-4 py-16 sm:px-6 lg:px-8 bg-white grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="text-left">
-          <img src="EMBL_EBI_logo.png" alt="EMBL-EBI Logo" className="w-[150px] object-cover" />
+          <img src="EMBL_EBI_logo.png" alt="EMBL-EBI Logo" className="mx-auto w-[100px] md:w-[150px] object-cover" />
         </div>
-        <div className="text-center">
+        <div className="text-center md:text-center text-sm">
         © 2025 EBI<br />
         Terms of use
            </div>
-        <div className="text-right">
+        <div className="text-center md:text-right text-sm">
         feedback<br />
-        Page created 9-January-2017
+        Page created 28-June-2025
           </div>
       
       </section>

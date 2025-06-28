@@ -135,13 +135,13 @@ const BlastMerops = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
-                        <Checkbox id="low-complexity" defaultChecked />
+                        <Checkbox id="low-complexity" defaultChecked className="border-merops-green text-merops-green checked:bg-green-400 checked:border-merops-green" />
                         <label htmlFor="low-complexity" className="text-sm text-merops-gray">
                           Filter low complexity regions
                         </label>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Checkbox id="gapped" defaultChecked />
+                        <Checkbox id="gapped" defaultChecked className="border-merops-green text-merops-green checked:bg-green-400 checked:border-merops-green" />
                         <label htmlFor="gapped" className="text-sm text-merops-gray">
                           Perform gapped alignment
                         </label>
@@ -149,13 +149,13 @@ const BlastMerops = () => {
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
-                        <Checkbox id="mask-lookup" />
+                        <Checkbox id="mask-lookup" className="border-merops-green text-merops-green checked:bg-green-400 checked:border-merops-green" />
                         <label htmlFor="mask-lookup" className="text-sm text-merops-gray">
                           Mask for lookup table only
                         </label>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Checkbox id="composition" defaultChecked />
+                        <Checkbox id="composition" defaultChecked className="border-merops-green text-merops-green checked:bg-green-400 checked:border-merops-green" />
                         <label htmlFor="composition" className="text-sm text-merops-gray">
                           Composition-based statistics
                         </label>

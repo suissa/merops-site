@@ -29,8 +29,8 @@ const Navigation = () => {
             <div className="w-12 h-auto flex items-center justify-center">
               <img src="https://merops.oncorithms.institute/simbolo.png" alt="MEROPS Logo" className="w-full h-full object-cover" />
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-merops-gray hidden md:block font-brand">MEROPS</h1>
+            <div className="text-center md:text-left w-full">
+              <h1 className="text-4xl font-bold text-merops-gray md:block font-brand">MEROPS</h1>
               <p className="text-sm font-bold text-merops-gray-light -mt-1">Peptidase Database</p>
             </div>
           </Link>
