@@ -27,7 +27,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-12 h-auto flex items-center justify-center">
-              <img src="http://localhost:8080/simbolo.png" alt="MEROPS Logo" className="w-full h-full object-cover" />
+              <img src="https://merops.oncorithms.institute/simbolo.png" alt="MEROPS Logo" className="w-full h-full object-cover" />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-merops-gray hidden md:block font-brand">MEROPS</h1>
