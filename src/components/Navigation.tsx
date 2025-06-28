@@ -26,10 +26,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-auto flex items-center justify-center">
+            <div className="w-16 h-auto flex items-center justify-center">
               <img src="https://merops.oncorithms.institute/simbolo.png" alt="MEROPS Logo" className="w-full h-full object-cover" />
             </div>
-            <div className="text-center md:text-left w-full">
+            <div className="text-left md:text-left w-full">
               <h1 className="text-4xl font-bold text-merops-gray md:block font-brand">MEROPS</h1>
               <p className="text-sm font-bold text-merops-gray-light -mt-1">Peptidase Database</p>
             </div>
@@ -245,7 +245,7 @@ const Navigation = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-merops-gray"
             >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </Button>
