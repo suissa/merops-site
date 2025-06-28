@@ -31,7 +31,7 @@ const Navigation = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-merops-gray hidden md:block font-brand">MEROPS</h1>
-              <p className="text-lg text-merops-gray-light -mt-1">Peptidase Database</p>
+              <p className="text-sm font-bold text-merops-gray-light -mt-1">Peptidase Database</p>
             </div>
           </Link>
 
