@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   useMousePosition,
 } from "@/components/ui/navigation-menu";
-import { Search } from "lucide-react";
+import { FileStack, GripVertical, Search, SmartphoneNfc, Wrench } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,8 @@ const Navigation = () => {
               <NavigationMenuList>
                 {/* Peptidase Menu */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger  onMouseEnter={handleMouseEnter} className="text-merops-gray bg-[#fffbea] hover:bg-[#fffbea] hover:text-merops-green">
+                  <NavigationMenuTrigger  onMouseEnter={handleMouseEnter} className="text-md text-merops-gray bg-[#fffbea] hover:bg-[#fffbea] hover:text-merops-green">
+                  <GripVertical className="h-6 w-6 text-merops-green mr-2" />
                     Peptidase
                   </NavigationMenuTrigger>
                   <NavigationMenuContent mousePosition={mousePosition}>
@@ -99,7 +100,8 @@ const Navigation = () => {
 
                 {/* Family & Clan */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="text-merops-gray bg-[#fffbea] hover:text-merops-green">
+                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="text-md text-merops-gray bg-[#fffbea] hover:text-merops-green">
+                    <FileStack className="h-6 w-6 text-merops-green mr-2" />
                     Classification
                   </NavigationMenuTrigger>
                   <NavigationMenuContent mousePosition={mousePosition}>
@@ -130,7 +132,8 @@ const Navigation = () => {
 
                 {/* Tools */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="bg-[#fffbea] text-merops-gray hover:text-merops-green">
+                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="text-md bg-[#fffbea] text-merops-gray hover:text-merops-green">
+                    <Wrench className="h-6 w-6 text-merops-green mr-2" />
                     Tools
                   </NavigationMenuTrigger>
                   <NavigationMenuContent mousePosition={mousePosition}>
@@ -170,7 +173,8 @@ const Navigation = () => {
 
                 {/* Information */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="text-merops-gray bg-[#fffbea] hover:text-merops-green">
+                  <NavigationMenuTrigger onMouseEnter={handleMouseEnter} className="text-md text-merops-gray bg-[#fffbea] hover:text-merops-green">
+                    <SmartphoneNfc className="h-6 w-6 text-merops-green mr-2" />
                     Information
                   </NavigationMenuTrigger>
                   <NavigationMenuContent mousePosition={mousePosition}>

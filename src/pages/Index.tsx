@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Book, ArrowRight, FileStack, GripVertical, Wrench } from "lucide-react";
+import { Search, Book, ArrowRight, FileStack, GripVertical, Wrench, Eye, Rss, Rocket, MessageSquareCode, CirclePlus } from "lucide-react";
 
 const Index = () => {
   return (
@@ -26,7 +26,7 @@ const Index = () => {
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-[#fffbea] border-merops-green text-merops-green hover:bg-merops-green hover:text-white">
                 <Link to="/info/about">
-                  <Book className="mr-2 h-5 w-5" />
+                  <CirclePlus className="mr-2 h-5 w-5" />
                   Learn More
                 </Link>
               </Button>
@@ -45,22 +45,32 @@ const Index = () => {
 The MEROPS database uses an hierarchical, structure-based classification of the peptidases. In this, each peptidase is assigned to a Family on the basis of statistically significant similarities in amino acid sequence, and families that are thought to be homologous are grouped together in a Clan. There is a Summary page for each family and clan, and these again have indexes. Each of the Summary pages offers links to supplementary pages.  
   </p>        
 <p className="mb-8">
-Please use the Menu in the side-bar to navigate through the database, and consult the About pages to discover more. To reach the Inhibitors side of MEROPS click the button at the top of the sidebar.
-</p>
-<p className="mb-8">
 The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL-European Bioinformatics Institute, Cambridge CB10 1SD, UK (merops@ebi.ac.uk).
 </p>
         </div>
-        <div className="w-full md:w-[60%] p-4 max-w-7xl mx-auto text-merops-gray">
-          <img src="release-sem-bg.png" alt="Release" className="w-full h-auto object-cover" />
+        <div className="w-full md:w-[60%] p-4 max-w-7xl mx-auto text-merops-gray flex justify-center items-center">
+          <img src="release-sem-bg.png" alt="Release" className="w-full h-auto" />
         </div>
       </section>
 
+    <section className="sm:px-6 lg:px-8 bg-white flex flex-col md:flex-row w-full" id="release">
+      <div className="w-full p-8 border-l-4 rounded-lg border-merops-green md:w-[60%] p-4 max-w-7xl mx-auto text-merops-gray text-md bg-merops-green-50">
+        <p className="mb-2">
+          <h1 className="flex text-2xl font-bold pb-4 items-center justify-center text-merops-green">
+              <MessageSquareCode className="h-8 w-8 text-merops-green mr-2" />
+              Use us and cite us!</h1>
+        
+Many authors find it useful to include data from MEROPS in their publications, and that is very much what we are here for, but please cite the appropriate publication as well as the URL when you do so. This is: Rawlings, N.D., Barrett, A.J., Thomas, P.D., Huang, X., Bateman, A. & Finn, R.D. (2018) The MEROPS database of proteolytic enzymes, their substrates and inhibitors in 2017 and a comparison with peptidases in the PANTHER database. Nucleic Acids Res 46, D624-D632.  Thank you!
+        </p>
+      </div>
+    </section>
       {/* Main Features */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-merops-gray text-center mb-12">
-            Explore MEROPS
+            <div className="flex items-center justify-center text-merops-green">
+              <Rocket className="h-8 w-8 text-merops-green mr-2" />
+              Explore MEROPS</div>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Peptidases */}
@@ -184,7 +194,11 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-merops-gray mb-4">Latest Updates</h2>
+            <h2 className="text-3xl font-bold text-merops-gray mb-4">
+            <div className="flex items-center justify-center text-merops-green">
+              <Rss className="h-8 w-8 text-merops-green mr-2" />
+              Latest Updates</div>
+              </h2>
             <p className="text-merops-gray-light">Stay updated with the latest additions and improvements to MEROPS</p>
           </div>
           <div className="space-y-6">
@@ -214,8 +228,11 @@ The MEROPS website and database are run by Neil D. Rawlings, alumnus at the EMBL
           <div className="text-center mt-8">
             <Button asChild variant="outline" className="border-merops-green text-merops-green hover:bg-merops-green hover:text-white">
               <Link to="/info/whats-new">
-                View All Updates
+              <div className="flex items-center justify-center">
+                <Eye className="h-4 w-4 text-merops-green mr-2" />
+                <span className="text-merops-green">View All Updates</span>
                 <ArrowRight className="ml-2 h-4 w-4" />
+                </div>
               </Link>
             </Button>
           </div>
